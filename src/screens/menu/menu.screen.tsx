@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, SafeAreaView} from 'react-native';
 
-const HomeScreen = (): JSX.Element => {
+const MenuScreen = (): JSX.Element => {
   return (
     <SafeAreaView
       style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
@@ -13,4 +13,4 @@ const HomeScreen = (): JSX.Element => {
   );
 };
 
-export default HomeScreen;
+export default MenuScreen;

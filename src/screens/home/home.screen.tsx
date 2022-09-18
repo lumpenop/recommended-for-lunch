@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
+import {View, Text, SafeAreaView, Button} from 'react-native';
 import axios from 'axios';
 
 const API_KEY =
@@ -10,15 +10,19 @@ const URL =
 const HomeScreen = (): JSX.Element => {
   const [res] = React.useState(null);
 
-  useEffect(() => {
-    axios.get(URL).then(response => {});
-  }, []);
+  // useEffect(() => {
+  //   axios.get(URL).then(response => {});
+  // }, []);
   return (
     <SafeAreaView
       style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <View>
         <Text style={{color: 'black'}}>hi</Text>
         <Text>{res}</Text>
+        {/*<Button*/}
+        {/*  title="Go to Details"*/}
+        {/*  onPress={() => navigation.navigate('Details')}*/}
+        {/*/>*/}
       </View>
     </SafeAreaView>
   );
