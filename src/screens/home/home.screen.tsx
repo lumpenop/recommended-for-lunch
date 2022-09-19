@@ -1,11 +1,10 @@
-import React, {useEffect} from 'react';
-import {View, Text, SafeAreaView, Button} from 'react-native';
-import axios from 'axios';
+import React from 'react';
+import {View, Text, SafeAreaView} from 'react-native';
 
-const API_KEY =
-  'keRIOLYYA0r5WQ9+cJbTIvdZ2o5BrtzvL39Li2onduXZbR+lJ/b1wQ2BaZa0P438Xkyp8zakCAho1hYsLtnoqw==';
-const URL =
-  'https://infuser.odcloud.kr/oas/docs?namespace=3053840/v1/uddi:9cb85e53-3592-4a8d-9b07-eec77edbc8c2_model';
+// const API_KEY =
+//   'keRIOLYYA0r5WQ9+cJbTIvdZ2o5BrtzvL39Li2onduXZbR+lJ/b1wQ2BaZa0P438Xkyp8zakCAho1hYsLtnoqw==';
+// const URL =
+//   'https://infuser.odcloud.kr/oas/docs?namespace=3053840/v1/uddi:9cb85e53-3592-4a8d-9b07-eec77edbc8c2_model';
 
 const HomeScreen = (): JSX.Element => {
   const [res] = React.useState(null);
