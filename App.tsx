@@ -12,7 +12,7 @@ import React from 'react';
 import {StatusBar, useColorScheme} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import RootNavigation from './src/routes/root.navigation';
+import Screens from './src/screens';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 const App = () => {
@@ -28,7 +28,8 @@ const App = () => {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <RootNavigation />
+      {/*<RootNavigation />*/}
+      <Screens />
     </SafeAreaProvider>
   );
 };
