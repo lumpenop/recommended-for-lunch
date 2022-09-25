@@ -12,8 +12,8 @@ import React from 'react';
 import {StatusBar, useColorScheme} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import Screens from './src/screens';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import RootRoutes from './src/routes/root.routes';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -29,7 +29,7 @@ const App = () => {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       {/*<RootNavigation />*/}
-      <Screens />
+      <RootRoutes />
     </SafeAreaProvider>
   );
 };
