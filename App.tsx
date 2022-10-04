@@ -16,7 +16,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import RootRoutes from './src/routes/root.routes';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  // const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
