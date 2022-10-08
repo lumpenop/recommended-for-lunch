@@ -16,6 +16,7 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
   Platform,
+  Text,
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
@@ -31,15 +32,13 @@ const App = () => {
 
   return (
     <SafeAreaProvider style={backgroundStyle}>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-        <StatusBar
-          barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-          backgroundColor={backgroundStyle.backgroundColor}
-        />
-        {/*<RootNavigation />*/}
-        <RootRoutes />
-      </KeyboardAvoidingView>
+      <StatusBar
+        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
+        backgroundColor={backgroundStyle.backgroundColor}
+      />
+      {/*<RootNavigation />*/}
+      <Text>hi</Text>
+      <RootRoutes />
     </SafeAreaProvider>
   );
 };
