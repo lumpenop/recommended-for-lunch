@@ -9,14 +9,22 @@
  */
 
 import React from 'react';
-import {StatusBar, useColorScheme} from 'react-native';
+import {
+  StatusBar,
+  useColorScheme,
+  KeyboardAvoidingView,
+  Keyboard,
+  TouchableWithoutFeedback,
+  Platform,
+  Text,
+} from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import RootRoutes from './src/routes/root.routes';
 
 const App = () => {
-  // const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -29,6 +37,7 @@ const App = () => {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       {/*<RootNavigation />*/}
+      <Text>hi</Text>
       <RootRoutes />
     </SafeAreaProvider>
   );
